@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieTracker", "CalorieTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieApp", "CalorieApp\CalorieApp.csproj", "{8F54DF91-36BE-41D5-98A5-0C044B95D853}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieTracker.Tests", "CalorieTracker.Tests\CalorieTracker.Tests.csproj", "{A5C1AAC3-3837-4FD4-8C86-7A98AEDA2BDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,5 +24,9 @@ Global
 		{8F54DF91-36BE-41D5-98A5-0C044B95D853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F54DF91-36BE-41D5-98A5-0C044B95D853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F54DF91-36BE-41D5-98A5-0C044B95D853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C1AAC3-3837-4FD4-8C86-7A98AEDA2BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C1AAC3-3837-4FD4-8C86-7A98AEDA2BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C1AAC3-3837-4FD4-8C86-7A98AEDA2BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C1AAC3-3837-4FD4-8C86-7A98AEDA2BDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
