@@ -6,7 +6,7 @@ namespace CalorieTracker.Tests.Utils;
 
 [TestClass]
 [TestSubject(typeof(MacroExtensions))]
-public class MacroExtensionsTest {
+public class MacroExtensionsTests {
 
     [TestMethod]
     public void TestTotalCalories() {
