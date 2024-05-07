@@ -13,20 +13,6 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Button
-                x:Name="AddDishBtn"
-                Text="Add Dish"
-                SemanticProperties.Hint="Adds a dish to the database"
-                Clicked="OnAddDishClicked"
-                HorizontalOptions="Fill" />
-            <Button
-                x:Name="RemoveDishBtn"
-                Text="Remove Dish"
-                SemanticProperties.Hint="Removes a dish from the database"
-                Clicked="OnRemoveDishClicked"
-                HorizontalOptions="Fill" />
-            />
-
         </VerticalStackLayout>
     </ScrollView>
 
