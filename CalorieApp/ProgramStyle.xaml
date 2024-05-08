@@ -1,0 +1,45 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    x:Class="CalorieApp.MainPage">
+    <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="HeightRequest" Value="40" />
+        <Setter Property="CornerRadius" Value="14" />
+        <Setter Property="BackgroundColor" Value="#5D2B53" />
+        <Setter Property="TextColor" Value="#FCFDFC" />
+        <Setter Property="MinimumHeightRequest" Value="40" />
+    </Style>
+
+    <Style x:Key="LabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="#010104" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="Headline" TargetType="Label">
+        <Setter Property="TextColor" Value="#010104" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+
+    </Style>
+
+    <Style x:Key="SubHeadline" TargetType="Label">
+        <Setter Property="TextColor" Value="#010104" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="SSubHeadline" TargetType="Label">
+        <Setter Property="TextColor" Value="#010104" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="ProgressBarStyle" TargetType="ProgressBar">
+        <Setter Property="HeightRequest" Value="10" />
+        <Setter Property="BackgroundColor" Value="DarkGray" />
+        <Setter Property="ProgressColor" Value="#010104" />
+    </Style>
+</ResourceDictionary>
