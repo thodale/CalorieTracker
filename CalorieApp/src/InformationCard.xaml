@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:calorieApp="clr-namespace:CalorieApp"
+             x:Class="CalorieApp.InformationCard"
+             BackgroundColor="White">
+
+    <Frame CornerRadius="10" Padding="10" BackgroundColor="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="0"
+                x:Name="CardTitleLabel"
+                Style="{StaticResource Headline}"
+                FontAttributes="Bold" />
+            <Label
+                Grid.Row="1"
+                x:Name="CardSubTitleLabel"
+                Style="{StaticResource SSubHeadline}"
+                Margin="0,0,0,10" />
+
+            <StackLayout Grid.Row="2" Spacing="10">
+                <Grid ColumnSpacing="10" RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25*" />
+                        <RowDefinition Height="25*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+
+                    <calorieApp:InformationLabel
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        x:Name="TopLeftLabel" />
+
+                    <calorieApp:InformationLabel
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        x:Name="BottomLeftLabel" />
+
+                    <calorieApp:InformationLabel
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        x:Name="TopRightLabel"
+                        TextAlign="Start" />
+
+                    <calorieApp:InformationLabel
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        x:Name="BottomRightLabel"
+                        TextAlign="Start" />
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </Frame>
+</ContentView>
