@@ -22,10 +22,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Install maccatalyst workload
-      run: dotnet workload install maccatalyst
-    - name: Install maui-maccaatalyst workload
-      run: dotnet workload install maui-maccatalyst
+    - name: Install ios workload
+      run: dotnet workload install ios
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
