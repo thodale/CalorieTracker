@@ -1,9 +1,14 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=FFA7274B_002DE7E3_002D4D32_002DBDC4_002D6E3159F6498B/@EntryIndexedValue">CalorieTracker.Test</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ADishExtensionsTest_002Ecs_002Fl_003ACalorieTracker_002ETest_003Fsrc_003FUtils_003FDishExtensionsTest_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=FFA7274B_002DE7E3_002D4D32_002DBDC4_002D6E3159F6498B/@EntryIndexedValue">A5C1AAC3-3837-4FD4-8C86-7A98AEDA2BDF</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=MSTest/@EntryIndexedValue">d6790ab7-33c2-4425-b2c9-51480cd1a852</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=da5cf176_002D5e76_002D4e0b_002D99c3_002Dfda425581707/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetMacrosReturnsAllMacros" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8f8b5a54_002Dfa25_002D4c38_002Da11e_002Dfca09714ea4a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;CalorieTracker.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/Users/thomasdale/RiderProjects/CalorieTracker/CalorieTracker.Tests" Presentation="&amp;lt;CalorieTracker.Tests&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bc1bd9a1_002Dbbfd_002D4108_002D8bfa_002D1f4e518d5e8c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;MSTest::935553E0-F860-4205-8639-500F96D8B9EB::net8.0::CalorieTracker.Test.Utils.DishExtensionsTest.GetMacrosReturnsAllMacros&lt;/TestId&gt;
-    &lt;TestId&gt;MSTest::935553E0-F860-4205-8639-500F96D8B9EB::net8.0::CalorieTracker.Test.Utils.DishExtensionsTest.TotalCaloriesReturnsSumOfAllMacros&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::A5C1AAC3-3837-4FD4-8C86-7A98AEDA2BDF::net8.0::CalorieTracker.Tests.Utils.DishExtensionsTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	
+	</wpf:ResourceDictionary>
