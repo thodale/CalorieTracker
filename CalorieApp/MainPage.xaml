@@ -2,18 +2,59 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:calorieApp="clr-namespace:CalorieApp"
              x:Class="CalorieApp.MainPage">
+    <Grid BackgroundColor="#FCFDFC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <VerticalStackLayout Grid.Column="1" Spacing="10">
+            <Label Padding="0,10,0,0"
+                   x:Name="WelcomeLabel"
+                   Text="Hi there!"
+                   Style="{StaticResource Headline}"
+                   HorizontalOptions="Center" />
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Label
-                Text="Calorie Tracker"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
+            <VerticalStackLayout Spacing="5">
+                <Label
+                    x:Name="MealsCountLabel"
+                    Text="You've logged X meals today."
+                    Style="{StaticResource LabelStyle}" />
+            </VerticalStackLayout>
         </VerticalStackLayout>
-    </ScrollView>
 
+        <calorieApp:InformationCard
+            Grid.Column="1"
+            Grid.Row="0"
+            x:Name="MacroInformationCard"
+            HeightRequest="100" WidthRequest="190" />
+
+        <ScrollView Grid.Column="1" Grid.Row="1">
+            <VerticalStackLayout Spacing="10" VerticalOptions="End">
+                <Button
+                    Text="Breakfast"
+                    Style="{StaticResource ButtonStyle}"
+                    BackgroundColor="#234D7B" />
+
+                <Button
+                    Text="Lunch"
+                    Style="{StaticResource ButtonStyle}"
+                    BackgroundColor="#234D7B" />
+                <Button
+                    Text="Dinner"
+                    Style="{StaticResource ButtonStyle}"
+                    BackgroundColor="#234D7B" />
+                <Button
+                    Text="Snacks"
+                    Style="{StaticResource ButtonStyle}" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
