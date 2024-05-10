@@ -5,21 +5,21 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CalorieTracker.Tests.Utils;
 
 [TestClass]
-[TestSubject(typeof(DishExtensions))]
-public class DishExtensionsTests {
+[TestSubject(typeof(MealExtensions))]
+public class MealExtensionsTests {
     private const int MacroAmount = 10;
-    private static Dish dish;
+    private static Meal meal;
 
     [TestInitialize]
     public static void TestInitialize(TestContext context) {
-        var ingredients = new Ingredient[] {
-            new("Test1") {
+        var ingredients = new MealComponent[] {
+            new(1, "Test1") {
                 Protein = new Protein(MacroAmount),
                 Carbohydrates = new Carbohydrates(MacroAmount),
                 Fat = new Fat(MacroAmount),
                 Alcohol = new Alcohol(MacroAmount)
             },
-            new("Test2") {
+            new(2, "Test2") {
                 Protein = new Protein(MacroAmount),
                 Carbohydrates = new Carbohydrates(MacroAmount),
                 Fat = new Fat(MacroAmount),
@@ -27,17 +27,17 @@ public class DishExtensionsTests {
             }
         };
 
-        dish = new Dish("Test", ingredients);
+        meal = new Meal(1, "Test", ingredients);
     }
 
     [TestCleanup]
     public static void TestCleanup(TestContext context) {
-        dish = null;
+        meal = null;
     }
 
     [TestMethod]
     public void GetMacrosReturnsAllMacros() {
-        var macros = dish.GetMacros();
+        var macros = meal.GetMacros();
 
         Assert.AreEqual(8, macros.Count);
     }
@@ -51,8 +51,8 @@ public class DishExtensionsTests {
         var alcoholCalories = MacroAmount * MacroUtils.AlcoholCaloriesPerGram;
 
         var macroCalories = proteinCalories + carbohydratesCalories + fatCalories + alcoholCalories;
-        var totalCalories = macroCalories * dish.Ingredients.Length;
+        var totalCalories = macroCalories * meal.Ingredients.Length;
 
-        Assert.AreEqual(totalCalories, dish.TotalCalories());
+        Assert.AreEqual(totalCalories, meal.TotalCalories());
     }
 }
