@@ -22,4 +22,4 @@ The project is created with:
 - Jetbrains Rider
 
 ## Setup
-To currently run this project, clone the repository in a supported IDE and hit play.
+To currently run this project, clone the repository in Visual Studio or Jetbrains Rider, select the project you want to run (CalorieApp or CalorieTracker) and hit run. The app is currently only supported on iOS.
