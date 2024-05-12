@@ -5,12 +5,13 @@ Kalorie is a C# .NET application built with MAUI that helps users track their ca
 Most calorie trackers out there are slow and has a convoluted UI. My goal with this project is to create a fast and simple calorie tracker, and just that. No subscriptions, no ads, no unnecessary features. Only the calories & macros in your meals.
 
 ## Current Features
+Currently, only the "frame" has been implemented - UI and meal composing is WIP. 
+
+## Work In Progress
 - Adding ingredients and composing meals.
 - Gives you an overview of your calories and macros in your currently tracked meals.
-- Live access to the OpenFoodFacts database.
 
 ## Planned Features
-- Improve user interface
 - Add more statistics like average calorie and macro intake
 - Let users calculate their TDEE (Total Daily Energy Expenditure) and use it as a reference point.
 
